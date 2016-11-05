@@ -1,0 +1,40 @@
+.pokemon {
+  display: flex;
+
+  width: 100px;
+  height: 100px;
+
+  border: 1px solid black;
+  margin: 10px 5px;
+  user-select: none;
+
+  &.none {
+    background: #e2e2e2;
+  }
+
+  &.have {
+    background: #8dd08d;
+  }
+
+  &.pre {
+    background: #d0cc8d;
+  }
+}
+
+.pokemonName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 20px;
+
+  font-size: 8pt;
+  text-overflow: clip;
+  overflow: hidden;
+
+  span {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

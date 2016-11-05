@@ -1,0 +1,19 @@
+#dex {
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-flow: column wrap;
+
+  background: white;
+  min-width: 33%;
+  max-width: 100%;
+}
+
+#pokemonContainer {
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}

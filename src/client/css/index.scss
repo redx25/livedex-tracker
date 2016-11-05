@@ -1,0 +1,22 @@
+@import "_normalize.scss";
+@import "_colors.scss";
+@import "_topbar.scss";
+@import "_dex.scss";
+@import "_pokemon.scss";
+
+#app{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#contentBox {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+#pokemonInfo, #routeInfo {
+  background: #e0e0e0;
+  min-width: 33%;
+  border-left: 1px solid black;
+}
