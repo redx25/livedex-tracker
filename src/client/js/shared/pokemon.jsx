@@ -22,6 +22,7 @@ class Pokemon extends React.PureComponent {
           name={this.props.mon.get('name')}
           number={this.props.mon.get('number')}
           />
+        <div className={`pkspr pkmn-${this.props.mon.get('number')}`} />
       </div>
     );
   }

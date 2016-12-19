@@ -23,7 +23,7 @@ const pokemon = new Seq({
   }),
   Chikorita: new Seq({
     name: 'Chikorita',
-    number: '154',
+    number: '152',
     gen: 2
   })
 });
