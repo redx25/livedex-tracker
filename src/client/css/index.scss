@@ -3,6 +3,7 @@
 @import "_topbar.scss";
 @import "_dex.scss";
 @import "_pokemon.scss";
+@import "_info.scss";
 
 #app{
   display: flex;
@@ -13,10 +14,4 @@
 #contentBox {
   flex: 1 1 auto;
   display: flex;
-}
-
-#pokemonInfo, #routeInfo {
-  background: #e0e0e0;
-  min-width: 33%;
-  border-left: 1px solid black;
 }

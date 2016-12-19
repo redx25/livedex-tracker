@@ -1,17 +1,17 @@
 import React from 'react';
-import {Seq, Map} from 'immutable';
+import {Seq, Map, List} from 'immutable';
 import Topbar from './topbar/topbar.jsx';
 import Dex from './dex/dex.jsx';
 import RouteInfo from './routeInfo/route-info.jsx';
 import PokemonInfo from './pokemonInfo/pokemon-info.jsx';
 
 const pokemon = new Seq({
-  bulbasaur: new Seq({
+  Bulbasaur: new Seq({
     name: 'Bulbasaur',
     number: '001',
     gen: 1
   }),
-  ivysaur: new Seq({
+  Ivysaur: new Seq({
     name: 'Ivysaur',
     number: '002',
     gen: 1
@@ -21,24 +21,66 @@ const pokemon = new Seq({
     number: '003',
     gen: 1
   }),
-  chikorita: new Seq({
+  Chikorita: new Seq({
     name: 'Chikorita',
     number: '154',
     gen: 2
   })
 });
 
-export default class App extends React.Component {
+export default class App extends React.PureComponent {
   constructor(props) {
     super(props);
 
     this.state = {
       gen: 1,
-      pokemonStatus: new Map()
+      pokemonStatus: new Map(),
+      pokemonInfo: new Map({open: false}),
+      routeInfo: new Map({open: false})
     };
+
+    this.state = this.loadStateFromLocalStorage();
 
     this.handleGenClick = this.handleGenClick.bind(this);
     this.handlePokemonClick = this.handlePokemonClick.bind(this);
+  }
+
+  loadStateFromLocalStorage() {
+    let newState = {};
+
+    for (const key in this.state) {
+      if (!this.state.hasOwnProperty(key)) {
+        continue;
+      }
+
+      if (localStorage.getItem(key)) {
+        let value = JSON.parse(localStorage.getItem(key));
+
+        if (value === null) {
+          continue;
+        } else if (value instanceof Object && Array.isArray(value)) {
+          value = new List(value);
+        } else if (value instanceof Object) {
+          value = new Map(value);
+        }
+
+        newState[key] = value;
+      } else {
+        newState[key] = this.state[key];
+      }
+    }
+
+    return newState;
+  }
+
+  setState(change) {
+    for (const key in change) {
+      if (change.hasOwnProperty(key)) {
+        localStorage.setItem(key, JSON.stringify(change[key]));
+      }
+    }
+
+    super.setState(change);
   }
 
   handleGenClick(newGen) {
@@ -79,8 +121,8 @@ export default class App extends React.Component {
             gen={this.state.gen}
             onPokemonClick={this.handlePokemonClick}
             />
-          <RouteInfo />
-          <PokemonInfo />
+          <RouteInfo open={this.state.routeInfo.get('open')} />
+          <PokemonInfo open={this.state.pokemonInfo.get('open')} />
         </div>
       </div>
     );

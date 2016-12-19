@@ -1,6 +1,10 @@
 import React from 'react';
 
 class PokemonName extends React.Component {
+  shouldComponentUpdate() {
+    return false;
+  }
+
   render() {
     return (
       <div className="pokemonName">

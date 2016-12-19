@@ -16,7 +16,7 @@ baseConfig.module.rules.push({
   test: /\.scss$/,
   include: SRC_DIR,
   exclude: /(node_modules|bower_components)/,
-  use: ['style', 'css', 'postcss-loader', 'sass']
+  use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
 });
 
 baseConfig.devServer = {

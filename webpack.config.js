@@ -21,7 +21,7 @@ config.module = {
       test: /\.js(x|)$/,
       include: SRC_DIR,
       exclude: /(node_modules|bower_components)/,
-      use: ['babel']
+      use: ['babel-loader']
     }
   ]
 };

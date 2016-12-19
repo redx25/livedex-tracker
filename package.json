@@ -15,7 +15,8 @@
         2,
         "always"
       ],
-      "import/no-extraneous-dependencies": 0
+      "import/no-extraneous-dependencies": 0,
+      "no-prototype-builtins": 0
     }
   },
   "version": "0.0.0",
@@ -53,11 +54,20 @@
     "xo": "^0.17.0"
   },
   "dependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "eslint-plugin-react": "^6.7.1",
     "immutability-helper": "^2.0.0",
+    "immutable": "^3.8.1",
     "immutable-js": "^0.3.1-6",
     "immutable-props": "^1.1.0",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-hot-loader": "^3.0.0-beta.5"
+    "node-sass": "^3.13.0",
+    "postcss-loader": "^1.1.1",
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0",
+    "react-hot-loader": "^3.0.0-beta.5",
+    "webpack": "^2.1.0-beta.27",
+    "webpack-dev-server": "^2.1.0-beta.11",
+    "xo": "^0.17.1"
   }
 }

@@ -6,7 +6,7 @@ class Dex extends React.PureComponent {
   renderPokemon() {
     return (
       this.props.pokemon.valueSeq().filter(mon => {
-        return mon.get('gen') === this.props.gen;
+        return mon.get('gen') <= this.props.gen;
       }).map(mon => {
         return (<Pokemon
           key={mon.get('number')}
