@@ -1,6 +1,7 @@
 import React from 'react';
 import IPropTypes from 'immutable-props';
 import PokemonName from './pokemon-name.jsx';
+import PokemonImage from './pokemon-image.jsx';
 
 class Pokemon extends React.PureComponent {
   constructor(props) {
@@ -22,7 +23,7 @@ class Pokemon extends React.PureComponent {
           name={this.props.mon.get('name')}
           number={this.props.mon.get('number')}
           />
-        <div className={`pkspr pkmn-${this.props.mon.get('number')}`} />
+        <PokemonImage number={this.props.mon.get('number')} />
       </div>
     );
   }

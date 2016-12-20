@@ -1,37 +1,17 @@
 import React from 'react';
-import {Seq, Map, List} from 'immutable';
+import {Map, List} from 'immutable';
 import Topbar from './topbar/topbar.jsx';
 import Dex from './dex/dex.jsx';
 import RouteInfo from './routeInfo/route-info.jsx';
 import PokemonInfo from './pokemonInfo/pokemon-info.jsx';
-
-const pokemon = new Seq({
-  Bulbasaur: new Seq({
-    name: 'Bulbasaur',
-    number: '001',
-    gen: 1
-  }),
-  Ivysaur: new Seq({
-    name: 'Ivysaur',
-    number: '002',
-    gen: 1
-  }),
-  Venusaur: new Seq({
-    name: 'Venusaur',
-    number: '003',
-    gen: 1
-  }),
-  Chikorita: new Seq({
-    name: 'Chikorita',
-    number: '152',
-    gen: 2
-  })
-});
+import pokemon from './shared/pokemon-data';
 
 export default class App extends React.PureComponent {
   constructor(props) {
     super(props);
 
+    // Set defaults for state
+    // Something needs to be set here for it to load for local storage later
     this.state = {
       gen: 1,
       pokemonStatus: new Map(),
@@ -41,6 +21,7 @@ export default class App extends React.PureComponent {
 
     this.state = this.loadStateFromLocalStorage();
 
+    // Binds for functions passed down through props
     this.handleGenClick = this.handleGenClick.bind(this);
     this.handlePokemonClick = this.handlePokemonClick.bind(this);
   }
@@ -48,6 +29,7 @@ export default class App extends React.PureComponent {
   loadStateFromLocalStorage() {
     let newState = {};
 
+    // Take all the keys from the state and look for saves from local storage
     for (const key in this.state) {
       if (!this.state.hasOwnProperty(key)) {
         continue;
@@ -56,6 +38,7 @@ export default class App extends React.PureComponent {
       if (localStorage.getItem(key)) {
         let value = JSON.parse(localStorage.getItem(key));
 
+        // Change parsed JSON to Immutable.js types where relevent
         if (value === null) {
           continue;
         } else if (value instanceof Object && Array.isArray(value)) {
@@ -73,6 +56,9 @@ export default class App extends React.PureComponent {
     return newState;
   }
 
+  // Overload of setState to save the changes to local storage for later load
+  // May (?) cause state changes to be slightly slower due to synchronous write to
+  // Local Storage
   setState(change) {
     for (const key in change) {
       if (change.hasOwnProperty(key)) {
@@ -88,13 +74,14 @@ export default class App extends React.PureComponent {
   }
 
   handlePokemonClick(key) {
-    const pokemonStatus = this.state.pokemonStatus;
+    const pokemonStatus = this.state.pokemonStatus; // Alias for brevity
     let status = 'none';
 
     if (pokemonStatus.has(key)) {
       status = pokemonStatus.get(key);
     }
 
+    // Rotate between status
     switch (status) {
       case 'none':
         status = 'have';

@@ -6,7 +6,8 @@ const gens = new Seq({
   gen3: new Seq(['Ruby', 'Sapphire', 'Emerald', 'FireRed', 'LeafGreen']),
   gen4: new Seq(['Diamond', 'Pearl', 'Platinum', 'HeartGold', 'SoulSilver']),
   gen5: new Seq(['Black', 'White', 'Black 2', 'White 2']),
-  gen6: new Seq(['X', 'Y', 'OmegaRuby', 'AlphaSapphire'])
+  gen6: new Seq(['X', 'Y', 'OmegaRuby', 'AlphaSapphire']),
+  gen7: new Seq(['Sun', 'Moon'])
 });
 
 const gameShort = new Seq({
@@ -33,7 +34,9 @@ const gameShort = new Seq({
   X: 'X',
   Y: 'Y',
   OmegaRuby: 'OR',
-  AlphaSapphire: 'AS'
+  AlphaSapphire: 'AS',
+  Sun: 'S',
+  Moon: 'M'
 });
 
 export {gens, gameShort};

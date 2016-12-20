@@ -26,7 +26,8 @@
     "start": "node dev-server.js",
     "test": "xo && ava",
     "dev-build": "webpack -d --config webpack.config.dev",
-    "build": "webpack -p --config webpack.config.production"
+    "build": "webpack -p --config webpack.config.production",
+    "get-info": "node ./tools/get-pokemon-info.js"
   },
   "keywords": [
     "pokemon"
@@ -45,10 +46,13 @@
     "eslint-plugin-immutable": "^1.0.0",
     "eslint-plugin-react": "^6.4.1",
     "extract-text-webpack-plugin": "^2.0.0-beta",
+    "jquery": "^3.1.1",
+    "jsdom": "^9.9.1",
     "node-sass": "^3.10.1",
     "postcss-loader": "^1.0.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
+    "superagent": "^3.3.1",
     "webpack": "^2.1.0-beta",
     "webpack-dev-server": "^2.1.0-beta",
     "xo": "^0.17.0"
