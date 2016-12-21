@@ -2,11 +2,7 @@ import React from 'react';
 import {gens} from '../shared/constants';
 import Gen from './gen.jsx';
 
-class GenSelector extends React.Component {
-  shouldComponentUpdate() {
-    return false;
-  }
-
+class GenSelector extends React.PureComponent {
   renderGens() {
     return (
       gens.entrySeq().map(([gen, games]) => {
@@ -15,6 +11,7 @@ class GenSelector extends React.Component {
           games={games}
           gen={parseInt(gen, 10)}
           onClick={this.props.onGenClick}
+          selectedGen={this.props.selectedGen}
           />
         );
       })
@@ -31,7 +28,8 @@ class GenSelector extends React.Component {
 }
 
 GenSelector.propTypes = {
-  onGenClick: React.PropTypes.func.isRequired
+  onGenClick: React.PropTypes.func.isRequired,
+  selectedGen: React.PropTypes.number.isRequired
 };
 
 export default GenSelector;

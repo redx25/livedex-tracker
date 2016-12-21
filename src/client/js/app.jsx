@@ -100,7 +100,10 @@ export default class App extends React.PureComponent {
   render() {
     return (
       <div id="app">
-        <Topbar onGenClick={this.handleGenClick} />
+        <Topbar
+          onGenClick={this.handleGenClick}
+          selectedGen={this.state.gen}
+          />
         <div id="contentBox">
           <Dex
             pokemon={pokemon}

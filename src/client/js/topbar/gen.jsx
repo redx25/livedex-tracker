@@ -2,7 +2,7 @@ import React from 'react';
 import IPropTypes from 'immutable-props';
 import {gameShort} from '../shared/constants';
 
-class Gen extends React.Component {
+class Gen extends React.PureComponent {
   constructor(props) {
     super(props);
 
@@ -27,7 +27,10 @@ class Gen extends React.Component {
 
   render() {
     return (
-      <div className="gen" onClick={this.handleClick}>
+      <div
+        className={`gen ${this.props.gen === this.props.selectedGen ? 'selected' : ''}`}
+        onClick={this.handleClick}
+        >
         {this.renderGames()}
       </div>
     );
@@ -37,7 +40,8 @@ class Gen extends React.Component {
 Gen.propTypes = {
   games: IPropTypes.Seq,
   onClick: React.PropTypes.func.isRequired,
-  gen: React.PropTypes.number.isRequired
+  gen: React.PropTypes.number.isRequired,
+  selectedGen: React.PropTypes.number.isRequired
 };
 
 export default Gen;

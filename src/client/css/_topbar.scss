@@ -37,6 +37,10 @@
     background: #676767;
     cursor: pointer;
   }
+
+  &.selected {
+    background: #000000;
+  }
 }
 
 .topRed { color: $red; }
