@@ -1011,8 +1011,8 @@ const pokemon = new Seq({
     number: '202',
     gen: 2
   }),
-  'Girafarig ': new Seq({
-    name: 'Girafarig ',
+  Girafarig: new Seq({
+    name: 'Girafarig',
     number: '203',
     gen: 2
   }),
@@ -1546,8 +1546,8 @@ const pokemon = new Seq({
     number: '309',
     gen: 3
   }),
-  'Manectric ': new Seq({
-    name: 'Manectric ',
+  Manectric: new Seq({
+    name: 'Manectric',
     number: '310',
     gen: 3
   }),
@@ -1661,8 +1661,8 @@ const pokemon = new Seq({
     number: '332',
     gen: 3
   }),
-  'Swablu ': new Seq({
-    name: 'Swablu ',
+  Swablu: new Seq({
+    name: 'Swablu',
     number: '333',
     gen: 3
   }),
@@ -1926,13 +1926,13 @@ const pokemon = new Seq({
     number: '385',
     gen: 3
   }),
-  'Deoxys ': new Seq({
-    name: 'Deoxys ',
+  Deoxys: new Seq({
+    name: 'Deoxys',
     number: '386',
     gen: 3
   }),
-  'Turtwig ': new Seq({
-    name: 'Turtwig ',
+  Turtwig: new Seq({
+    name: 'Turtwig',
     number: '387',
     gen: 4
   }),
@@ -1941,23 +1941,23 @@ const pokemon = new Seq({
     number: '388',
     gen: 4
   }),
-  'Torterra ': new Seq({
-    name: 'Torterra ',
+  Torterra: new Seq({
+    name: 'Torterra',
     number: '389',
     gen: 4
   }),
-  'Chimchar ': new Seq({
-    name: 'Chimchar ',
+  Chimchar: new Seq({
+    name: 'Chimchar',
     number: '390',
     gen: 4
   }),
-  'Monferno ': new Seq({
-    name: 'Monferno ',
+  Monferno: new Seq({
+    name: 'Monferno',
     number: '391',
     gen: 4
   }),
-  'Infernape ': new Seq({
-    name: 'Infernape ',
+  Infernape: new Seq({
+    name: 'Infernape',
     number: '392',
     gen: 4
   }),
@@ -1971,53 +1971,53 @@ const pokemon = new Seq({
     number: '394',
     gen: 4
   }),
-  'Empoleon ': new Seq({
-    name: 'Empoleon ',
+  Empoleon: new Seq({
+    name: 'Empoleon',
     number: '395',
     gen: 4
   }),
-  'Starly ': new Seq({
-    name: 'Starly ',
+  Starly: new Seq({
+    name: 'Starly',
     number: '396',
     gen: 4
   }),
-  'Staravia ': new Seq({
-    name: 'Staravia ',
+  Staravia: new Seq({
+    name: 'Staravia',
     number: '397',
     gen: 4
   }),
-  'Staraptor ': new Seq({
-    name: 'Staraptor ',
+  Staraptor: new Seq({
+    name: 'Staraptor',
     number: '398',
     gen: 4
   }),
-  'Bidoof ': new Seq({
-    name: 'Bidoof ',
+  Bidoof: new Seq({
+    name: 'Bidoof',
     number: '399',
     gen: 4
   }),
-  'Bibarel ': new Seq({
-    name: 'Bibarel ',
+  Bibarel: new Seq({
+    name: 'Bibarel',
     number: '400',
     gen: 4
   }),
-  'Kricketot ': new Seq({
-    name: 'Kricketot ',
+  Kricketot: new Seq({
+    name: 'Kricketot',
     number: '401',
     gen: 4
   }),
-  'Kricketune ': new Seq({
-    name: 'Kricketune ',
+  Kricketune: new Seq({
+    name: 'Kricketune',
     number: '402',
     gen: 4
   }),
-  'Shinx ': new Seq({
-    name: 'Shinx ',
+  Shinx: new Seq({
+    name: 'Shinx',
     number: '403',
     gen: 4
   }),
-  'Luxio ': new Seq({
-    name: 'Luxio ',
+  Luxio: new Seq({
+    name: 'Luxio',
     number: '404',
     gen: 4
   }),
@@ -2036,13 +2036,13 @@ const pokemon = new Seq({
     number: '407',
     gen: 4
   }),
-  'Cranidos ': new Seq({
-    name: 'Cranidos ',
+  Cranidos: new Seq({
+    name: 'Cranidos',
     number: '408',
     gen: 4
   }),
-  'Rampardos ': new Seq({
-    name: 'Rampardos ',
+  Rampardos: new Seq({
+    name: 'Rampardos',
     number: '409',
     gen: 4
   }),
@@ -2051,78 +2051,78 @@ const pokemon = new Seq({
     number: '410',
     gen: 4
   }),
-  'Bastiodon ': new Seq({
-    name: 'Bastiodon ',
+  Bastiodon: new Seq({
+    name: 'Bastiodon',
     number: '411',
     gen: 4
   }),
-  'Burmy ': new Seq({
-    name: 'Burmy ',
+  Burmy: new Seq({
+    name: 'Burmy',
     number: '412',
     gen: 4
   }),
-  'Wormadam ': new Seq({
-    name: 'Wormadam ',
+  Wormadam: new Seq({
+    name: 'Wormadam',
     number: '413',
     gen: 4
   }),
-  'Mothim ': new Seq({
-    name: 'Mothim ',
+  Mothim: new Seq({
+    name: 'Mothim',
     number: '414',
     gen: 4
   }),
-  'Combee ': new Seq({
-    name: 'Combee ',
+  Combee: new Seq({
+    name: 'Combee',
     number: '415',
     gen: 4
   }),
-  'Vespiquen ': new Seq({
-    name: 'Vespiquen ',
+  Vespiquen: new Seq({
+    name: 'Vespiquen',
     number: '416',
     gen: 4
   }),
-  'Pachirisu ': new Seq({
-    name: 'Pachirisu ',
+  Pachirisu: new Seq({
+    name: 'Pachirisu',
     number: '417',
     gen: 4
   }),
-  'Buizel ': new Seq({
-    name: 'Buizel ',
+  Buizel: new Seq({
+    name: 'Buizel',
     number: '418',
     gen: 4
   }),
-  'Floatzel ': new Seq({
-    name: 'Floatzel ',
+  Floatzel: new Seq({
+    name: 'Floatzel',
     number: '419',
     gen: 4
   }),
-  'Cherubi ': new Seq({
-    name: 'Cherubi ',
+  Cherubi: new Seq({
+    name: 'Cherubi',
     number: '420',
     gen: 4
   }),
-  'Cherrim ': new Seq({
-    name: 'Cherrim ',
+  Cherrim: new Seq({
+    name: 'Cherrim',
     number: '421',
     gen: 4
   }),
-  'Shellos ': new Seq({
-    name: 'Shellos ',
+  Shellos: new Seq({
+    name: 'Shellos',
     number: '422',
     gen: 4
   }),
-  'Gastrodon ': new Seq({
-    name: 'Gastrodon ',
+  Gastrodon: new Seq({
+    name: 'Gastrodon',
     number: '423',
     gen: 4
   }),
-  'Ambipom ': new Seq({
-    name: 'Ambipom ',
+  Ambipom: new Seq({
+    name: 'Ambipom',
     number: '424',
     gen: 4
   }),
-  'Drifloon ': new Seq({
-    name: 'Drifloon ',
+  Drifloon: new Seq({
+    name: 'Drifloon',
     number: '425',
     gen: 4
   }),
@@ -2131,123 +2131,123 @@ const pokemon = new Seq({
     number: '426',
     gen: 4
   }),
-  'Buneary ': new Seq({
-    name: 'Buneary ',
+  Buneary: new Seq({
+    name: 'Buneary',
     number: '427',
     gen: 4
   }),
-  'Lopunny ': new Seq({
-    name: 'Lopunny ',
+  Lopunny: new Seq({
+    name: 'Lopunny',
     number: '428',
     gen: 4
   }),
-  'Mismagius ': new Seq({
-    name: 'Mismagius ',
+  Mismagius: new Seq({
+    name: 'Mismagius',
     number: '429',
     gen: 4
   }),
-  'Honchkrow ': new Seq({
-    name: 'Honchkrow ',
+  Honchkrow: new Seq({
+    name: 'Honchkrow',
     number: '430',
     gen: 4
   }),
-  'Glameow ': new Seq({
-    name: 'Glameow ',
+  Glameow: new Seq({
+    name: 'Glameow',
     number: '431',
     gen: 4
   }),
-  'Purugly ': new Seq({
-    name: 'Purugly ',
+  Purugly: new Seq({
+    name: 'Purugly',
     number: '432',
     gen: 4
   }),
-  'Chingling ': new Seq({
-    name: 'Chingling ',
+  Chingling: new Seq({
+    name: 'Chingling',
     number: '433',
     gen: 4
   }),
-  'Stunky ': new Seq({
-    name: 'Stunky ',
+  Stunky: new Seq({
+    name: 'Stunky',
     number: '434',
     gen: 4
   }),
-  'Skuntank ': new Seq({
-    name: 'Skuntank ',
+  Skuntank: new Seq({
+    name: 'Skuntank',
     number: '435',
     gen: 4
   }),
-  'Bronzor ': new Seq({
-    name: 'Bronzor ',
+  Bronzor: new Seq({
+    name: 'Bronzor',
     number: '436',
     gen: 4
   }),
-  'Bronzong ': new Seq({
-    name: 'Bronzong ',
+  Bronzong: new Seq({
+    name: 'Bronzong',
     number: '437',
     gen: 4
   }),
-  'Bonsly ': new Seq({
-    name: 'Bonsly ',
+  Bonsly: new Seq({
+    name: 'Bonsly',
     number: '438',
     gen: 4
   }),
-  'Mime Jr. ': new Seq({
-    name: 'Mime Jr. ',
+  'Mime Jr.': new Seq({
+    name: 'Mime Jr.',
     number: '439',
     gen: 4
   }),
-  'Happiny ': new Seq({
-    name: 'Happiny ',
+  Happiny: new Seq({
+    name: 'Happiny',
     number: '440',
     gen: 4
   }),
-  'Chatot ': new Seq({
-    name: 'Chatot ',
+  Chatot: new Seq({
+    name: 'Chatot',
     number: '441',
     gen: 4
   }),
-  'Spiritomb ': new Seq({
-    name: 'Spiritomb ',
+  Spiritomb: new Seq({
+    name: 'Spiritomb',
     number: '442',
     gen: 4
   }),
-  'Gible ': new Seq({
-    name: 'Gible ',
+  Gible: new Seq({
+    name: 'Gible',
     number: '443',
     gen: 4
   }),
-  'Gabite ': new Seq({
-    name: 'Gabite ',
+  Gabite: new Seq({
+    name: 'Gabite',
     number: '444',
     gen: 4
   }),
-  'Garchomp ': new Seq({
-    name: 'Garchomp ',
+  Garchomp: new Seq({
+    name: 'Garchomp',
     number: '445',
     gen: 4
   }),
-  'Munchlax ': new Seq({
-    name: 'Munchlax ',
+  Munchlax: new Seq({
+    name: 'Munchlax',
     number: '446',
     gen: 4
   }),
-  'Riolu ': new Seq({
-    name: 'Riolu ',
+  Riolu: new Seq({
+    name: 'Riolu',
     number: '447',
     gen: 4
   }),
-  'Lucario ': new Seq({
-    name: 'Lucario ',
+  Lucario: new Seq({
+    name: 'Lucario',
     number: '448',
     gen: 4
   }),
-  'Hippopotas ': new Seq({
-    name: 'Hippopotas ',
+  Hippopotas: new Seq({
+    name: 'Hippopotas',
     number: '449',
     gen: 4
   }),
-  'Hippowdon ': new Seq({
-    name: 'Hippowdon ',
+  Hippowdon: new Seq({
+    name: 'Hippowdon',
     number: '450',
     gen: 4
   }),
@@ -2256,78 +2256,78 @@ const pokemon = new Seq({
     number: '451',
     gen: 4
   }),
-  'Drapion ': new Seq({
-    name: 'Drapion ',
+  Drapion: new Seq({
+    name: 'Drapion',
     number: '452',
     gen: 4
   }),
-  'Croagunk ': new Seq({
-    name: 'Croagunk ',
+  Croagunk: new Seq({
+    name: 'Croagunk',
     number: '453',
     gen: 4
   }),
-  'Toxicroak ': new Seq({
-    name: 'Toxicroak ',
+  Toxicroak: new Seq({
+    name: 'Toxicroak',
     number: '454',
     gen: 4
   }),
-  'Carnivine ': new Seq({
-    name: 'Carnivine ',
+  Carnivine: new Seq({
+    name: 'Carnivine',
     number: '455',
     gen: 4
   }),
-  'Finneon ': new Seq({
-    name: 'Finneon ',
+  Finneon: new Seq({
+    name: 'Finneon',
     number: '456',
     gen: 4
   }),
-  'Lumineon ': new Seq({
-    name: 'Lumineon ',
+  Lumineon: new Seq({
+    name: 'Lumineon',
     number: '457',
     gen: 4
   }),
-  'Mantyke ': new Seq({
-    name: 'Mantyke ',
+  Mantyke: new Seq({
+    name: 'Mantyke',
     number: '458',
     gen: 4
   }),
-  'Snover ': new Seq({
-    name: 'Snover ',
+  Snover: new Seq({
+    name: 'Snover',
     number: '459',
     gen: 4
   }),
-  'Abomasnow ': new Seq({
-    name: 'Abomasnow ',
+  Abomasnow: new Seq({
+    name: 'Abomasnow',
     number: '460',
     gen: 4
   }),
-  'Weavile ': new Seq({
-    name: 'Weavile ',
+  Weavile: new Seq({
+    name: 'Weavile',
     number: '461',
     gen: 4
   }),
-  'Magnezone ': new Seq({
-    name: 'Magnezone ',
+  Magnezone: new Seq({
+    name: 'Magnezone',
     number: '462',
     gen: 4
   }),
-  'Lickilicky ': new Seq({
-    name: 'Lickilicky ',
+  Lickilicky: new Seq({
+    name: 'Lickilicky',
     number: '463',
     gen: 4
   }),
-  'Rhyperior ': new Seq({
-    name: 'Rhyperior ',
+  Rhyperior: new Seq({
+    name: 'Rhyperior',
     number: '464',
     gen: 4
   }),
-  'Tangrowth ': new Seq({
-    name: 'Tangrowth ',
+  Tangrowth: new Seq({
+    name: 'Tangrowth',
     number: '465',
     gen: 4
   }),
-  'Electivire ': new Seq({
-    name: 'Electivire ',
+  Electivire: new Seq({
+    name: 'Electivire',
     number: '466',
     gen: 4
   }),
@@ -2336,58 +2336,58 @@ const pokemon = new Seq({
     number: '467',
     gen: 4
   }),
-  'Togekiss ': new Seq({
-    name: 'Togekiss ',
+  Togekiss: new Seq({
+    name: 'Togekiss',
     number: '468',
     gen: 4
   }),
-  'Yanmega ': new Seq({
-    name: 'Yanmega ',
+  Yanmega: new Seq({
+    name: 'Yanmega',
     number: '469',
     gen: 4
   }),
-  'Leafeon ': new Seq({
-    name: 'Leafeon ',
+  Leafeon: new Seq({
+    name: 'Leafeon',
     number: '470',
     gen: 4
   }),
-  'Glaceon ': new Seq({
-    name: 'Glaceon ',
+  Glaceon: new Seq({
+    name: 'Glaceon',
     number: '471',
     gen: 4
   }),
-  'Gliscor ': new Seq({
-    name: 'Gliscor ',
+  Gliscor: new Seq({
+    name: 'Gliscor',
     number: '472',
     gen: 4
   }),
-  'Mamoswine ': new Seq({
-    name: 'Mamoswine ',
+  Mamoswine: new Seq({
+    name: 'Mamoswine',
     number: '473',
     gen: 4
   }),
-  'Porygon-Z ': new Seq({
-    name: 'Porygon-Z ',
+  'Porygon-Z': new Seq({
+    name: 'Porygon-Z',
     number: '474',
     gen: 4
   }),
-  'Gallade ': new Seq({
-    name: 'Gallade ',
+  Gallade: new Seq({
+    name: 'Gallade',
     number: '475',
     gen: 4
   }),
-  'Probopass ': new Seq({
-    name: 'Probopass ',
+  Probopass: new Seq({
+    name: 'Probopass',
     number: '476',
     gen: 4
   }),
-  'Dusknoir ': new Seq({
-    name: 'Dusknoir ',
+  Dusknoir: new Seq({
+    name: 'Dusknoir',
     number: '477',
     gen: 4
   }),
-  'Froslass ': new Seq({
-    name: 'Froslass ',
+  Froslass: new Seq({
+    name: 'Froslass',
     number: '478',
     gen: 4
   }),
@@ -2396,68 +2396,68 @@ const pokemon = new Seq({
     number: '479',
     gen: 4
   }),
-  'Uxie ': new Seq({
-    name: 'Uxie ',
+  Uxie: new Seq({
+    name: 'Uxie',
     number: '480',
     gen: 4
   }),
-  'Mesprit ': new Seq({
-    name: 'Mesprit ',
+  Mesprit: new Seq({
+    name: 'Mesprit',
     number: '481',
     gen: 4
   }),
-  'Azelf ': new Seq({
-    name: 'Azelf ',
+  Azelf: new Seq({
+    name: 'Azelf',
     number: '482',
     gen: 4
   }),
-  'Dialga ': new Seq({
-    name: 'Dialga ',
+  Dialga: new Seq({
+    name: 'Dialga',
     number: '483',
     gen: 4
   }),
-  'Palkia ': new Seq({
-    name: 'Palkia ',
+  Palkia: new Seq({
+    name: 'Palkia',
     number: '484',
     gen: 4
   }),
-  'Heatran ': new Seq({
-    name: 'Heatran ',
+  Heatran: new Seq({
+    name: 'Heatran',
     number: '485',
     gen: 4
   }),
-  'Regigigas ': new Seq({
-    name: 'Regigigas ',
+  Regigigas: new Seq({
+    name: 'Regigigas',
     number: '486',
     gen: 4
   }),
-  'Giratina ': new Seq({
-    name: 'Giratina ',
+  Giratina: new Seq({
+    name: 'Giratina',
     number: '487',
     gen: 4
   }),
-  'Cresselia ': new Seq({
-    name: 'Cresselia ',
+  Cresselia: new Seq({
+    name: 'Cresselia',
     number: '488',
     gen: 4
   }),
-  'Phione ': new Seq({
-    name: 'Phione ',
+  Phione: new Seq({
+    name: 'Phione',
     number: '489',
     gen: 4
   }),
-  'Manaphy ': new Seq({
-    name: 'Manaphy ',
+  Manaphy: new Seq({
+    name: 'Manaphy',
     number: '490',
     gen: 4
   }),
-  'Darkrai ': new Seq({
-    name: 'Darkrai ',
+  Darkrai: new Seq({
+    name: 'Darkrai',
     number: '491',
     gen: 4
   }),
-  'Shaymin ': new Seq({
-    name: 'Shaymin ',
+  Shaymin: new Seq({
+    name: 'Shaymin',
     number: '492',
     gen: 4
   }),
@@ -3341,8 +3341,8 @@ const pokemon = new Seq({
     number: '668',
     gen: 6
   }),
-  'Flab�b�': new Seq({
-    name: 'Flab�b�',
+  'Flabébé': new Seq({
+    name: 'Flabébé',
     number: '669',
     gen: 6
   }),

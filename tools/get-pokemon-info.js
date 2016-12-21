@@ -1,10 +1,11 @@
-#!/usr/bin/env node
 // Pulls pokemon info and generates code to make objects of it
-
 const fs = require('fs');
 const request = require('superagent');
+const charset = require('superagent-charset');
 const jquery = require('jquery');
 const jsdom = require('jsdom');
+
+charset(request); // Set up superagent to support more characters
 
 let regions = ['Kanto:', 'Johto:', 'Hoenn:', 'Sinnoh:', 'Unova:', 'Kalos:', 'Alola:'];
 
@@ -13,6 +14,7 @@ const natNumberRegex = /\d\d\d/;
 const nameRegex = /(?![\d\d\d ]).*/;
 const testNameRegex = /[^a-z0-9]/i;
 const escapeRegex = /('|"|`)/;
+const trailingWhiteRegex = /\n| +$/;
 
 // Init output with top code
 let output = 'import {Seq} from \'immutable\';\n\n';
@@ -21,6 +23,7 @@ output += 'const pokemon = new Seq({';
 // Pull the information
 request
   .get('http://www.serebii.net/pokedex-sm/')
+  .charset('ISO-8859-1')
   .end((e, response) => {
     if (e) {
       throw e;
@@ -52,7 +55,6 @@ function handleDOM($) {
     // Loop over the options to find all the pokemon
     for (let j = 0; j < regionPokemon.length; j++) {
       // Skip the region option
-      console.log(regionPokemon[j].text);
       if (regionPokemon[j].text.includes(regions[i])) {
         continue;
       }
@@ -61,7 +63,7 @@ function handleDOM($) {
 
       // Get the pokemon number and name
       number = regionPokemon[j].text.match(natNumberRegex)[0];
-      name = regionPokemon[j].text.match(nameRegex)[0].replace(/\n/, '');
+      name = regionPokemon[j].text.match(nameRegex)[0].replace(trailingWhiteRegex, '');
 
       // Check for problematic names
       if (testNameRegex.test(name)) {
