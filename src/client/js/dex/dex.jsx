@@ -1,29 +1,48 @@
 import React from 'react';
+import {List} from 'immutable';
 import IPropTypes from 'immutable-props';
-import Pokemon from '../shared/pokemon.jsx';
+import {boxSizes} from '../shared/constants';
+import Box from './box.jsx';
 
 class Dex extends React.PureComponent {
-  renderPokemon() {
-    return (
-      this.props.pokemon.valueSeq().filter(mon => {
+  renderBoxes() {
+    let outList = new List();
+    let boxCounter = 0;
+    let boxSize = boxSizes.get(this.props.gen);
+
+    let boxPokemon = this.props.pokemon.toList()
+      .filter(mon => {
         return mon.get('gen') <= this.props.gen;
-      }).map(mon => {
-        return (<Pokemon
-          key={mon.get('number')}
-          mon={mon}
-          status={this.props.pokemonStatus.get(mon.get('name'))}
-          source="dex"
-          onClick={this.props.onPokemonClick}
-          />);
-      })
-    );
+      }).skip(boxCounter++ * boxSize)
+      .take(boxSize);
+
+    while (boxPokemon.size > 0) {
+      outList = outList.push(
+        <Box
+          key={boxCounter}
+          box={boxCounter}
+          boxSize={boxSize}
+          pokemon={boxPokemon}
+          pokemonStatus={this.props.pokemonStatus}
+          onPokemonClick={this.props.onPokemonClick}
+          />
+      );
+
+      boxPokemon = this.props.pokemon.toList()
+      .filter(mon => {
+        return mon.get('gen') <= this.props.gen;
+      }).skip(boxCounter++ * boxSize)
+      .take(boxSize);
+    }
+
+    return outList;
   }
 
   render() {
     return (
       <div id="dex">
-        <div id="pokemonContainer">
-          {this.renderPokemon()}
+        <div id="boxContainer">
+          {this.renderBoxes()}
         </div>
       </div>
     );

@@ -1,13 +1,13 @@
 import {Seq} from 'immutable';
 
 const gens = new Seq({
-  gen1: new Seq(['Red', 'Blue', 'Yellow']),
-  gen2: new Seq(['Gold', 'Silver', 'Crystal']),
-  gen3: new Seq(['Ruby', 'Sapphire', 'Emerald', 'FireRed', 'LeafGreen']),
-  gen4: new Seq(['Diamond', 'Pearl', 'Platinum', 'HeartGold', 'SoulSilver']),
-  gen5: new Seq(['Black', 'White', 'Black 2', 'White 2']),
-  gen6: new Seq(['X', 'Y', 'OmegaRuby', 'AlphaSapphire']),
-  gen7: new Seq(['Sun', 'Moon'])
+  1: new Seq(['Red', 'Blue', 'Yellow']),
+  2: new Seq(['Gold', 'Silver', 'Crystal']),
+  3: new Seq(['Ruby', 'Sapphire', 'Emerald', 'FireRed', 'LeafGreen']),
+  4: new Seq(['Diamond', 'Pearl', 'Platinum', 'HeartGold', 'SoulSilver']),
+  5: new Seq(['Black', 'White', 'Black 2', 'White 2']),
+  6: new Seq(['X', 'Y', 'OmegaRuby', 'AlphaSapphire']),
+  7: new Seq(['Sun', 'Moon'])
 });
 
 const gameShort = new Seq({
@@ -39,4 +39,14 @@ const gameShort = new Seq({
   Moon: 'M'
 });
 
-export {gens, gameShort};
+const boxSizes = new Seq({
+  1: 20,
+  2: 20,
+  3: 30,
+  4: 30,
+  5: 30,
+  6: 30,
+  7: 30
+});
+
+export {gens, gameShort, boxSizes};

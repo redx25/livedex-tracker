@@ -13,7 +13,7 @@ class GenSelector extends React.Component {
         return (<Gen
           key={gen}
           games={games}
-          gen={parseInt(gen.replace(/\D/g, ''), 10)}
+          gen={parseInt(gen, 10)}
           onClick={this.props.onGenClick}
           />
         );
