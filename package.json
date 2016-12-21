@@ -26,7 +26,7 @@
     "start": "node dev-server.js",
     "test": "xo && ava",
     "dev-build": "webpack -d --config webpack.config.dev",
-    "build": "webpack -p --config webpack.config.production",
+    "build": "webpack --config webpack.config.production",
     "get-info": "node ./tools/get-pokemon-info.js",
     "make-atlas": "babel-node ./tools/make-atlas.js"
   },
@@ -62,20 +62,21 @@
     "xo": "^0.17.0"
   },
   "dependencies": {
-    "babel-core": "^6.18.2",
-    "babel-loader": "^6.2.7",
-    "eslint-plugin-react": "^6.7.1",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "eslint-plugin-react": "^6.8.0",
     "immutability-helper": "^2.0.0",
     "immutable": "^3.8.1",
     "immutable-js": "^0.3.1-6",
     "immutable-props": "^1.1.0",
-    "node-sass": "^3.13.0",
-    "postcss-loader": "^1.1.1",
-    "react": "^15.4.0",
-    "react-dom": "^15.4.0",
+    "node-sass": "^3.13.1",
+    "postcss-loader": "^1.2.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
     "react-hot-loader": "^3.0.0-beta.5",
-    "webpack": "^2.1.0-beta.27",
-    "webpack-dev-server": "^2.1.0-beta.11",
+    "sass-loader": "^4.1.1",
+    "webpack": "^2.1.0-beta.28",
+    "webpack-dev-server": "^2.1.0-beta.12",
     "xo": "^0.17.1"
   }
 }

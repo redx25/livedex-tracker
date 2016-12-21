@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 let baseConfig = require('./webpack.config');
 
@@ -11,11 +11,10 @@ baseConfig.module.rules.push({
   test: /\.scss$/,
   include: SRC_DIR,
   exclude: /(node_modules|bower_components)/,
-  use: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!sass-loader')
+  use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
 });
 
 baseConfig.plugins = [
-  new ExtractTextPlugin('../css/style.css'),
   new webpack.DefinePlugin({
     'process.env': {
       NODE_ENV: JSON.stringify('production')
@@ -24,8 +23,10 @@ baseConfig.plugins = [
   new webpack.optimize.UglifyJsPlugin({
     compress: {
       warnings: false
-    }
+    },
+    sourceMap: false
   }),
+  new webpack.optimize.DedupePlugin(),
   new webpack.LoaderOptionsPlugin({
     minimize: true
   })
