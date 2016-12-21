@@ -6,6 +6,10 @@
 @import "_info.scss";
 @import "pokemon-sprites.scss";
 
+body {
+  background: #F0F1DB;
+}
+
 #app{
   display: flex;
   flex-direction: column;
